@@ -1,0 +1,130 @@
+
+<html lang="en">
+
+<head>
+    <title>Política de privacidade - App do Ergosocial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ricardoveiga27.github.io/ergosocial-policy/material.blue-yellow.min.css">
+
+    <style>
+    body {
+        background-color: #eeeeee;
+        text-align: justify;
+    }
+
+    a.mdl-navigation__link {
+        color: rgb(255,255,255,0.6) !important;
+    }
+
+    a.mdl-navigation__link.active {
+        color: rgb(255,255,255) !important;
+    }
+
+    @media(max-width: 840px) {
+        .mdl-layout__header-row {
+        padding: 0 16px 0 16px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Ergosocial</span>
+
+        <div class="mdl-layout-spacer"></div>
+
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link active" href="#" id="toggle-pt">PT</a>
+            <a class="mdl-navigation__link" href="#" id="toggle-en">EN</a>
+        </nav>
+        </div>
+    </header>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-card mdl-shadow--2dp mdl-cell--12-col mdl-cell--10-col-tablet mdl-cell--1-offset-desktop mdl-cell--8-col-desktop mdl-cell--2-offset-desktop"
+            style="margin: 0 auto;">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text" id="card-title">Política de privacidade</h2>
+            </div>
+            <div class="mdl-card__supporting-text" id="card-content">
+                <p>Política de privacidade do aplicativo do Ergosocial.</p>
+
+                <p>Todas as suas informações pessoais recolhidas, serão usadas para o ajudar a tornar o seu uso do nosso aplicativo o mais produtivo e agradável possível.</p>
+
+                <p>A garantia da confidencialidade dos dados pessoais dos utilizadores do nosso aplicativo é importante para o Ergosocial.</p>
+
+                <p>A informação pessoal recolhida pode incluir o seu nome, e-mail e/ou outros.</p>
+
+                <p>O uso do aplicativo do Ergosocial pressupõe a aceitação deste Acordo de privacidade. A equipe do Ergosocial reserva-se ao direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de privacidade com regularidade de forma a estar sempre atualizado.</p>
+
+                <h4>Ligações a sites de terceiros</h4>
+
+                <p>O aplicativo do Ergosocial possui ligações para outros sites, os quais, a nosso ver, podem conter informações/ferramentas úteis para os nossos usuários. A nossa política de privacidade não é aplicada a sites de terceiros, pelo que, caso visite outro site a partir do nosso aplicativo deverá ler a politica de privacidade do mesmo.</p>
+
+                <p>Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses mesmos sites.</p>
+
+                <h4>Como os dados são utilizados?</h4>
+
+                <p>Dados de usuário são solicitados apenas na tela de participantes e mensagens do aplicativo, são áreas opcionais para quem deseja se comunicar com outros participantes do evento.</p>
+
+                <p>O sistema de login do aplicativo funciona utilizando a plataforma Firebase, dessa forma, temos acesso a dados como e-mail do usuário e informações que o mesmo adiciona em seu perfil, mas nada como senhas ou IDs do Facebook.</p>
+
+                <p>As mensagens enviadas pelo aplicativo também ficam armazenadas na plataforma Firebase, dessa forma, apenas administradores e os participantes das conversas podem ter acesso as mesmas.</p>
+
+                <p>Para fins estatísticos, cada tela visitada no aplicativo envia dados anônimos sobre a mesma para o servidor, mesma coisa como sistema e modelo do dispositivo utilizado.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    </div>
+
+    <script>
+    var languages = {
+        pt: {
+        title: document.title,
+        cardTitle: document.getElementById('card-title').textContent,
+        content: document.getElementById('card-content').innerHTML
+        },
+        en: {
+        title: 'Privacy Policy - Ergosocial App',
+        cardTitle: 'Privacy Policy',
+        content: "<p>Privacy Policy for the Ergosocial App.</p>\n\n<p>All of your personal information collected will be used to help you on making your use of our app as productive and enjoyable as possible.</p>\n\n<p>The personal data confidentiality guarantee of the users is important for Ergosocial.</p>\n\n<p>The personal information collected may include your name, e-mail and/or other information.</p>\n\n<p>The use of the Ergosocial App assumes the acceptance of this Privacy Agreement. The Ergosocial team reserves the right to change this agreement without prior notice. Therefore, we recommend that you review our privacy policy regularly so that you are always up-to-date.</p>\n\n<h4>Links to third party websites</h4>\n\n<p>The Ergosocial application has links to other sites which, in our opinion, may contain useful information/tools for our users. Our privacy policy is not applied to third party websites, so if you visit a different website from our app, you should read the privacy policy of it.</p>\n\n<p>We are not responsible for the privacy policy or content present on third party websites.</p>\n\n<h4>How is the data used?</h4>\n\n<p>User data is requested only on the attendees screen and application messages. These are optional areas for those who wish to communicate with other attendees of the event.</p>\n\n<p>The application login system works using the Firebase platform, so we have access to data such as the user's e-mail and information that the user adds to his profile, but nothing like passwords or Facebook IDs.</p>\n\n<p>Messages sent by the application are also stored on the Firebase platform, so only administrators and the chat participants can access them.</p>\n\n<p>For statistical purposes, each screen visited in the application sends anonymous data about it to the server, same as the system and model of the device used.</p>"
+        }
+    };
+
+    document.getElementById('toggle-pt').onclick = function(e) {
+        e.preventDefault();
+
+        this.classList.add('active');
+        document.getElementById('toggle-en').classList.remove('active');
+
+        toggleLanguage('pt');
+    }
+
+    document.getElementById('toggle-en').onclick = function(e) {
+        e.preventDefault();
+
+        this.classList.add('active');
+        document.getElementById('toggle-pt').classList.remove('active');
+
+        toggleLanguage('en');
+    }
+
+    function toggleLanguage(language) {
+        document.title = languages[language].title;
+        document.getElementById('card-title').textContent = languages[language].cardTitle;
+        document.getElementById('card-content').innerHTML = languages[language].content;
+    }
+    </script>
+
+</body>
+
+</html>
+    
